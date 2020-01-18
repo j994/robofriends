@@ -1,8 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux'
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import './App.css';
 import Scroll from '../components/scroll';
+
+import { setSeachField } from '../actions';
 
 class App extends React.Component {
     constructor() {
@@ -38,4 +41,4 @@ class App extends React.Component {
         );
     }
 }    
-export default App;
+export default connect()(App);

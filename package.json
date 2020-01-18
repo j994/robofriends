@@ -1,5 +1,6 @@
 {
   "name": "robofriends",
+  "homepage": "https://j994.github.io/robofriends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,10 +9,14 @@
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
     "react-scripts": "3.3.0",
+    "redux": "^4.0.5",
     "tachyons": "^4.11.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
